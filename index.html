@@ -1,0 +1,515 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IKEKO│メンズファッションストア</title>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.min.js"></script>
+<script>jQuery(function($){
+    $('.tab').click(function(){
+        $('.is-active').removeClass('is-active');
+        $(this).addClass('is-active');
+        $('.is-show').removeClass('is-show');
+        // クリックしたタブからインデックス番号を取得
+        const index = $(this).index();
+        // クリックしたタブと同じインデックス番号をもつコンテンツを表示
+        $('.panel').eq(index).addClass('is-show');
+    });
+});</script>
+</head>
+
+<body>
+<div class="top">
+  <div class="top_navi">
+    <p>
+    <ul>
+      <li><a href="#">ご利用ガイド</a></li>
+      <li><a href="#">会社概要</a></li>
+      <li><a href="#">レビュー</a></li>
+      <li><a href="#">配送・送料について</a></li>
+      <li><a href="#">お買い物かご</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
+    </p>
+  </div>
+  <!--top_navi-end--> 
+</div>
+<!--top-end-->
+
+<div class="info">
+  <h1><a href="#"> <img src="images/logo.jpg" width="197" height="58" alt="IKEKO"> </a></h1>
+  <div class="center">
+    <p>全国一律送料600円<br>
+      10,800円以上のお買い上げで送料無料</p>
+  </div>
+  <!--center-end-->
+  
+  <div class="shop">
+    <p class="tell-number"><img src="images/tell.png" width="29" height="30" alt="電話">0776-55-1234</p>
+    <p>営業時間 : 10：00 ～ 19:00 (土日祝休業)<br>
+      MAIL : sampleaddress@sample.com</p>
+  </div>
+  <!--shop-end--> 
+  
+</div>
+<!--info-end-->
+
+<nav>
+  <ul>
+    <li><a href="#">新商品</a></li>
+    <li><a href="#">再入荷</a></li>
+    <li><a href="#">カテゴリー</a></li>
+    <li><a href="#">ランキング</a></li>
+    <li><a href="#">スタイリング</a></li>
+  </ul>
+</nav>
+<div class="bottom-navi-bg">
+  <div class="bottom-navi">
+    <input class="search" type="text" placeholder="何かお探しですか？" >
+    </input>
+    <img src="images/nav_icon.png" width="23" height="23" alt="検索"> <span class="hot">HOTワード：</span>
+    <ul>
+      <li><a href="#">ワイドパンツ</a></li>
+      <li><a href="#">サイドライン</a></li>
+      <li><a href="#">アンクルパンツ</a></li>
+      <li><a href="#">送料無料</a></li>
+      <li><a href="#">ボアジャケット</a></li>
+    </ul>
+  </div>
+  <!--bottom_navi-end--> 
+</div>
+<!--bottom_navi-bg-end-->
+
+<div class="contents">
+<div class="top-img"> <a href="#"><img src="images/top_main.png" width="1000" height="356" alt="IKEKO"></a></div>
+<div class="side">
+<h2>キャッシュレスポイント還元</h2>
+<img src="images/side_cash.gif" width="250" height="32" alt="ssss">
+<h2>NEW ARRIVAL</h2>
+<ul>
+  <li><a href="#">新作アイテム　　1/15UP</a></li>
+  <li><a href="#">再入荷アイテム　1/14UP</a></li>
+  <li><a href="#">予約アイテム</a></li>
+</ul>
+<h2>LIMITED ITEM</h2>
+<ul>
+  <li><a href="#">送料無料</a></li>
+  <li><a href="#">再入荷</a></li>
+  <li><a href="#">残りわずか</a></li>
+  <li><a href="#">セット販売・福袋</a></li>
+</ul>
+<h2>CATEGORY</h2>
+<div class="category">
+<label for="category-1"><img src="images/side_tops.jpg" width="50" height="50" alt="トップス">トップス</label>
+<input type="checkbox" id="category-1" class="switch" />
+<ul>
+  <li><a href="#">シャツ</a></li>
+  <li><a href="#">カットソー</a></li>
+  <li><a href="#">カーディガン</a></li>
+  <li><a href="#">パーカー</a></li>
+  <li><a href="#">ニット</a></li>
+</ul>
+<label for="category-2"><img src="images/side_bottoms.jpg" width="50" height="50" alt="ボトムス">ボトムス</a></label>
+<input type="checkbox" id="category-2" class="switch" />
+<ul>
+  <li><a href="#">ジーンズ</a></li>
+  <li><a href="#">チノパン</a></li>
+  <li><a href="#">スラックス</a></li>
+  <li><a href="#">ワイドパンツ</a></li>
+  <li><a href="#">ジョガーパンツ</a></li>
+</ul>
+<label for="category-3"><img src="images/side_outer.jpg" width="50" height="50" alt="アウター">アウター</label>
+<input type="checkbox" id="category-3" class="switch" />
+<ul>
+  <li><a href="#">モッズコート</a></li>
+  <li><a href="#">ダウンジャケット</a></li>
+  <li><a href="#">ライダージャケット</a></li>
+  <li><a href="#">MA-1ジャケット</a></li>
+  <li><a href="#">ボアジャケット</a></li>
+</ul>
+<label for="category-4"><img src="images/side_goods.jpg" width="50" height="50" alt="グッズ">グッズ</label>
+<input type="checkbox" id="category-4" class="switch" />
+<ul>
+  <li><a href="#">時計</a></li>
+  <li><a href="#">靴下</a></li>
+  <li><a href="#">手袋</a></li>
+  <li><a href="#">ベルト</a></li>
+  <li><a href="#">財布</a></li>
+</ul>
+<label for="category-5"><img src="images/side_shooes.jpg" width="50" height="50" alt="シューズ">シューズ</label>
+<input type="checkbox" id="category-5" class="switch" />
+<ul>
+<li><a href="#">スニーカー</a></li>
+<li><a href="#">ブーツ</a></li>
+<li><a href="#">サンダル</a></li>
+<li><a href="#">ドレスシューズ</a></li>
+<li><a href="#">ローファー</a></li>
+</div>
+<h2>PRICE</h2>
+<ul>
+  <li><a href="#">～￥500</a></li>
+  <li><a href="#">￥501～￥1,000</a></li>
+  <li><a href="#">￥1,001～￥5,000</a></li>
+  <li><a href="#">￥5,001～￥7,000</a></li>
+  <li><a href="#">￥7,001～￥9,000</a></li>
+  <li><a href="#">￥9,001～￥15,000</a></li>
+  <li><a href="#">￥15,001～￥20,0000</a></li>
+  <li><a href="#">￥20,001～</a></li>
+</ul>
+<h2>COLOR</h2>
+<div class="color-menu">
+  <table border="0" cellspacing="24">
+    <tr>
+      <td class="color1"></td>
+      <td class="color2"></td>
+      <td class="color3"></td>
+      <td class="color4"></td>
+    </tr>
+    <tr>
+      <td class="color5"></td>
+      <td class="color6"></td>
+      <td class="color7"></td>
+      <td class="color8"></td>
+    </tr>
+    <tr>
+      <td class="color9"></td>
+      <td class="color10"></td>
+      <td class="color11"></td>
+      <td class="color12"></td>
+    </tr>
+  </table>
+</div>
+<!--color-menu-end-->
+</div>
+<!--side-end-->
+
+<div class="main">
+  <div class="main-title"> <img src="images/ranking.png" width="169" height="32" alt="ランキング">売り上げランキング </div>
+  <!--main-title-end--> 
+  
+  <!--タブ-->
+  <ul class="tab-group">
+    <li class="tab is-active tops">TOPS</li>
+    <li class="tab bottoms">BOTTOMS</li>
+    <li class="tab outer">OUTER</li>
+    <li class="tab goods">GOODS</li>
+    <li class="tab shooes">SHOOES</li>
+  </ul>
+  
+  <!--タブを切り替えて表示するコンテンツ-->
+  <div class="panel-group">
+    <div class="panel is-show">
+      <table width="720">
+        <tbody>
+          <tr>
+            <td><a href="#"><img src="images/ranking1_1.png" width="176" height="212" alt="ss"></a></td>
+            <td><a href="#"><img src="images/ranking1_2.png" width="176" height="211" alt="ddd"></a></td>
+            <td><a href="#"><img src="images/ranking1_3.jpg" width="176" height="211" alt="ss"></a></td>
+            <td><a href="#"><img src="images/ranking1_4.jpg" width="176" height="211" alt="fgh"></a></td>
+          </tr>
+          <tr>
+            <td><img src="images/ranking_logo1.png" width="47" height="30" alt=""/></td>
+            <td><img src="images/ranking_logo2.png" width="27" height="23" alt=""/></td>
+            <td><img src="images/ranking_logo3.png" width="24" height="33" alt=""/></td>
+            <td><img src="images/ranking_logo4.png" width="26" height="24" alt=""/></td>
+          </tr>
+          <tr class="tab-text">
+            <td>ポンチプルオーバーパーカー<br>
+              4  ,９９０円（税込）</td>
+            <td>ビッグワッフルルーズパーカー<br>
+              5 ,９8０円（税込）</td>
+            <td>ビッグワッフルプルオーバー<br>
+              ６ ,６8０円（税込）</td>
+            <td>ダブルフェイスカーディガン<br>
+              5 ,９8０円（税込）</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="#">
+      <div class="gray-text">トップス一覧へ</div>
+      </a> </div>
+    <!--panel is-show-tops-end-->
+    
+    <div class="panel">
+      <table width="720">
+        <tbody>
+          <tr>
+            <td><a href="#"><img src="images/ranking2_1.jpg" width="176" height="211" alt=""/></a></td>
+            <td><a href="#"><img src="images/ranking2_2.jpg" width="176" height="211" alt=""/></a></td>
+            <td><a href="#"><img src="images/ranking2_3.jpg" width="176" height="211" alt="ss"></a></td>
+            <td><a href="#"><img src="images/ranking2_4.jpg" width="176" height="211" alt="fgh"></a></td>
+          </tr>
+          <tr>
+            <td><img src="images/ranking_logo1.png" width="47" height="30" alt=""/></td>
+            <td><img src="images/ranking_logo2.png" width="27" height="23" alt=""/></td>
+            <td><img src="images/ranking_logo3.png" width="24" height="33" alt=""/></td>
+            <td><img src="images/ranking_logo4.png" width="26" height="24" alt=""/></td>
+          </tr>
+          <tr class="tab-text">
+            <td>テーパードスラックス<br>
+              3  ,９９０円（税込）</td>
+            <td>ストレッチジョガーパンツ<br>
+              2 ,９8０円（税込）</td>
+            <td>シューカットチノパンツ<br>
+              5 ,６8０円（税込）</td>
+            <td>チエックワイドパンツ<br>
+              4 ,９8０円（税込）</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="#">
+      <div class="gray-text">ボトムス一覧へ</div>
+      </a> </div>
+    <!--panel-bottom-end-->
+    
+    <div class="panel">
+      <table width="720">
+        <tbody>
+          <tr>
+            <td><a href="#"><img src="images/ranking3_1.jpg" width="176" height="211" alt=""/></a></td>
+            <td><a href="#"><img src="images/ranking3_2.jpg" width="176" height="211" alt=""/></a></td>
+            <td><a href="#"><img src="images/ranking3_3.png" width="176" height="211" alt=""/></a></td>
+            <td><a href="#"><img src="images/ranking3_4.jpg" width="176" height="211" alt="fgh"></a></td>
+          </tr>
+          <tr>
+            <td><img src="images/ranking_logo1.png" width="47" height="30" alt=""/></td>
+            <td><img src="images/ranking_logo2.png" width="27" height="23" alt=""/></td>
+            <td><img src="images/ranking_logo3.png" width="24" height="33" alt=""/></td>
+            <td><img src="images/ranking_logo4.png" width="26" height="24" alt=""/></td>
+          </tr>
+          <tr class="tab-text">
+            <td>ジップアップボアジャケット<br>
+              ９,９９０円（税込）</td>
+            <td>ハイブリットMA-1ジャケット<br>
+              7 ,９8０円（税込）</td>
+            <td>メルトンライダースジャケット<br>
+              7 ,９8０円（税込）</td>
+            <td>ハイネックダウンジャケット<br>
+              １０，８００円（税込）</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="#">
+      <div class="gray-text">アウター一覧へ</div>
+      </a> </div>
+    <!--panel-outer-end-->
+    
+    <div class="panel">
+      <table width="720">
+        <tbody>
+          <tr>
+            <td><a href="#"><img src="images/ranking4_1.jpg" width="176" height="211" alt=""/></a></td>
+            <td><a href="#"><img src="images/ranking4_2.jpg" width="176" height="211" alt=""/></a></td>
+            <td><a href="#"><img src="images/ranking4_3.jpg" width="176" height="211" alt=""/></a></td>
+            <td><a href="#"><img src="images/ranking4_4.jpg" width="176" height="211" alt="fgh"></a></td>
+          </tr>
+          <tr>
+            <td><img src="images/ranking_logo1.png" width="47" height="30" alt=""/></td>
+            <td><img src="images/ranking_logo2.png" width="27" height="23" alt=""/></td>
+            <td><img src="images/ranking_logo3.png" width="24" height="33" alt=""/></td>
+            <td><img src="images/ranking_logo4.png" width="26" height="24" alt=""/></td>
+          </tr>
+          <tr class="tab-text">
+            <td>METALLIC CADET<br>
+              １４,３００円（税込）</td>
+            <td>鹿の子 ケーブル ソックス<br>
+              １ ,０8０円（税込）</td>
+            <td>シープスキンスマホ手袋<br>
+              ５,１8０円（税込）</td>
+            <td>牛革スクエアバックルベルト<br>
+              ３，８５０円（税込）</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="#">
+      <div class="gray-text">グッズ一覧へ</div>
+      </a> </div>
+    <!--panel-goods-end-->
+    
+    <div class="panel">
+      <table width="720">
+        <tbody>
+          <tr>
+            <td><a href="#"><img src="images/ranking5_1.jpg" width="176" height="211" alt=""/></a></td>
+            <td><a href="#"><img src="images/ranking5_2.jpg" width="176" height="211" alt=""/></a></td>
+            <td><a href="#"><img src="images/ranking5_3.jpg" width="176" height="211" alt=""/></a></td>
+            <td><a href="#"><img src="images/ranking5_4.jpg" width="176" height="211" alt="fgh"></a></td>
+          </tr>
+          <tr>
+            <td><img src="images/ranking_logo1.png" width="47" height="30" alt=""/></td>
+            <td><img src="images/ranking_logo2.png" width="27" height="23" alt=""/></td>
+            <td><img src="images/ranking_logo3.png" width="24" height="33" alt=""/></td>
+            <td><img src="images/ranking_logo4.png" width="26" height="24" alt=""/></td>
+          </tr>
+          <tr class="tab-text">
+            <td>レザー編み上げスニーカー<br>
+              ５,２００円（税込）</td>
+            <td>レザーレースアップシューズ<br>
+              １０,８００円（税込）</td>
+            <td>UK8 ホールデザイン シューズ<br>
+              ６,４8０円（税込）</td>
+            <td>フェイクスエードサンダル<br>
+              ４，９８０円（税込）</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="#">
+      <div class="gray-text">シューズ一覧へ</div>
+      </a> </div>
+    <!--panel-shooes-end--> 
+    
+  </div>
+  <!--panel-end-->
+  
+  <div class="main-title"> <img src="images/newitem.png" width="169" height="32" alt=""/>新作続々入荷！2020/SSアイテム予約受付中 </div>
+  <!--main-title-end-->
+  
+  <div class="new"> <a href="#">
+    <div class="new-1"> <img src="images/new_1.jpg" width="200" height="366" alt=""/>
+      <p class="new-border">グレンチェックニット</p>
+      <p>1/15 10:00～販売開始<br>
+        3,190円（税込）</p>
+    </div>
+    <!--new-1-end--></a> <a href="#">
+    <div class="new-2"> <img src="images/new_2.jpg" width="200" height="366" alt=""/>
+      <p class="new-border">ソフトテーパードパンツ</p>
+      <p>1/18 13:00～販売開始<br>
+        6,280円（税込）</p>
+    </div>
+    <!--new-2-end--></a> <a href="#">
+    <div class="new-3"> <img src="images/new_3.jpg" width="200" height="366" alt=""/>
+      <p class="new-border3">フードウィンドブレーカー</p>
+      <p>1/20 13:00～販売開始<br>
+        6,280円（税込）</p>
+    </div>
+    <!--new-3-end--></a> </div>
+  <!--new-end-->
+  
+  <div class="clr"></div>
+  <div class="new-btn"> <a href="#" class="btn-square-slant btn1">詳細を見る</a> <a href="#" class="btn-square-slant btn2">詳細を見る</a> <a href="#" class="btn-square-slant btn3">詳細を見る</a> </div>
+  <!--new-btn-end--> 
+  
+  <a href="#">
+  <div class="gray-text">新入荷アイテムをもっとみる▼</div>
+  </a>
+  <div class="main-title"> <img src="images/kk_52.png" width="244" height="32" alt="スタイルブック">大人気アイテムの再入荷情報 </div>
+  <!--main-title-end-->
+  
+  <div class="restock">
+    <table width="720">
+      <tbody>
+        <tr>
+          <td><a href="item.html"><img src="images/reariival_1.png" width="176" height="170" alt=""/></a></td>
+          <td><a href="#"><img src="images/reariival_2.png" width="176" height="170" alt=""/></a></td>
+          <td><a href="#"><img src="images/reariival_3.png" width="176" height="170" alt=""/></a></td>
+          <td><a href="#"><<a href="#"><img src="images/reariival_4.png" width="176" height="170" alt=""/></a></td>
+        </tr>
+        <tr class="restock-text">
+          <td>11,190円（税込）</td>
+          <td>6,790円（税込）</td>
+          <td>5,190円（税込）</td>
+          <td>4,780円（税込）</td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="images/reariival_5.png" width="176" height="170" alt=""/></a></td>
+          <td><a href="#"><img src="images/reariival_6.png" width="176" height="170" alt=""/></a></td>
+          <td><a href="#"><img src="images/reariival_7.png" width="176" height="170" alt=""/></a></td>
+          <td><a href="#"><img src="images/reariival_8.png" width="176" height="170" alt=""/></a></td>
+        </tr>
+        <tr class="restock-text">
+          <td>7,890円（税込）</td>
+          <td>1,190円（税込）</td>
+          <td>8,760円（税込）</td>
+          <td>10,800円（税込）</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <a href="#">
+  <div class="gray-text">再入荷アイテムをもっとみる▼</div>
+  </a>
+  <div class="main-title"> <img src="images/kk_55.png" width="196" height="33" alt="スタイルブック">IKEKOの最新スタイルブックを一部紹介！ </div>
+  <!--main-title-end-->
+  
+  <div class="style">
+    <ul>
+      <li><a href="#"><img src="images/style1.jpg" width="176" height="322" alt="コーディネイト1"></a></li>
+      <li><a href="#"><img src="images/style2.jpg" width="176" height="322" alt="コーディネイト2"></a></li>
+      <li><a href="#"><img src="images/style3.jpg" width="176" height="322" alt="コーディネイト3"></a></li>
+      <li><a href="#"><img src="images/style4.jpg" width="176" height="322" alt="コーディネイト4"></a></li>
+    </ul>
+    <div class="clr"></div>
+  </div>
+  <!--style-end--> 
+  
+  <a href="#">
+  <div class="gray-text">スタイルブックをもっとみる▼</div>
+  </a> </div>
+<!--main-end-->
+<div class="clr"></div>
+<div class="guide-title">
+  <p>SHOPPING GUIDE</p>
+</div>
+<div class="guide">
+  <div class="guide-left">
+    <p class="guide-text"> <img src="images/guide-icon.png" width="28" height="28" alt="ご注文について">ご注文について</p>
+    <p class="guide-text-s">ネットでの注文は24時間受け付けております！</p>
+    <p>店舗へのお問合せにつきましては、下記の時間帯にお願いします。<br>
+      営業時間 10:00－19:00<br>
+      ※定休日：土日祝</p>
+    <p class="guide-text"> <img src="images/guide-icon.png" width="28" height="28" alt="返品・返金について">返品・返金について</p>
+    <p>返品は未開封・未使用のもののみ到着後1週間以内に<br>
+      電話連絡いただいたもののみお受けいたします。<br>
+      返品の送料・手数料については、初期不良の場合は当社が、<br>
+      それ以外のお客様都合による返品につきましては<br>
+      お客様にてご負担いただきます。</p>
+    <p class="guide-text-s">返金について</p>
+    <p>返金は返品商品到着確認後【10日】以内に<br>
+      ご指定口座にお振込致します。</p>
+    <p class="guide-text-s">返品連絡先</p>
+    <p>電話番号：999-9999-9999<br>
+      返送先住所：〒9910-0842<br>
+      福井県福井市開発5丁目103番地1<br>
+      担当者：加藤<br>
+    <p>※全国どこでも佐川急便の配送です。<br>
+      ※商品のお届け時期特にご指定がない場合、<br>
+      郵便振替、銀行振込⇒ご入金確認後、3日以内に発送致します。<br>
+      ※クレジット、代金引換⇒ご注文確認後、3日以内に発送致します。</p>
+  </div>
+  <!--guide-left-end-->
+  
+  <div class="guide-right">
+    <p class="guide-text"> <img src="images/guide-icon.png" width="28" height="28" alt="お支払いについて">お支払いについて</p>
+    <p class="guide-text-s">クレジットカードでのお支払い</p>
+    <img src="images/ft-card.gif" width="240" height="33" alt="クレジットカード">
+    <p>上記のクレジットカードがご利用可能となっております。<br>
+      <span class="small">※お支払い回数は1回払いとさせていただきます。</span><br>
+      銀行振込前払い(可) <span class="small">※振込手数料はお客様負担でお願い致します。</span></p>
+    <p class="guide-text-s">コンビニエンスストアでのお支払い</p>
+    <p>ローソン、ファミリーマート、セブンイレブン等<br>
+      各コンビニエンスストアでもお支払いいただけます。</p>
+    <a href="#">
+    <p class="blue"> &gt;&gt;&gt;&gt;お支払いについての詳細はこちら</p>
+    </a>
+    <p class="guide-text"> <img src="images/guide-icon.png" width="28" height="28" alt="プライバシーについて">プライバシーについて</p>
+    <p>当店では、お客様からお預かりしました個人情報類は、<br>
+      受注担当スタッフのみで厳重に管理し、<br>
+      第三者などへ譲渡・提供することは一切ありません。</p>
+    <p class="guide-text"> <img src="images/guide-icon.png" width="28" height="28" alt="店舗情報">店舗情報</p>
+    <p>ＩＫＥＫＯ<br>
+      〒9910-0842　福井県福井市開発5丁目103番地1<br>
+      電話： 0776-55-1234<br>
+      mail : sampleaddress@sample.com<br>
+      営業時間 : 10：00 ～ 19:00 (土日祝休業)</p>
+  </div>
+  <!--guide-right-end--> 
+</div>
+<!--guide--end-->
+
+</div>
+<!--contents-end-->
+
+<footer> &copy;ＩＫＥＫＯ </footer>
+</body>
+</html>
